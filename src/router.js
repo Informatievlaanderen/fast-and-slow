@@ -11,6 +11,7 @@ Vue.use(Router)
  */
 const router = new Router({
     mode: 'history',
+    base:'/fast-and-slow-demo/',
     routes: [
         {
             path: '/',

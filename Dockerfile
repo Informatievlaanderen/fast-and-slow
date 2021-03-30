@@ -22,5 +22,6 @@ COPY . .
 # build app for production with minification
 RUN npm run build
 
+RUN mkdir fast-and-slow-demo ; mv dist/* fast-and-slow-demo; mv fast-and-slow-demo dist
 EXPOSE 8080
 CMD [ "http-server", "dist" ]

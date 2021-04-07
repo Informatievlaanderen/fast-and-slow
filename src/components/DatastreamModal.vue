@@ -102,13 +102,13 @@ export default {
       if (!data.status === "success") {
         console.log("An error occurred when adding the data stream");
       }
-      
+
 
       await this.$emit("getAllStreams");
       this.emptyFields();
       //window.location.reload();
     },
-    /** 
+    /**
      * Empty the fields of the modal.
      */
     emptyFields: function(){
